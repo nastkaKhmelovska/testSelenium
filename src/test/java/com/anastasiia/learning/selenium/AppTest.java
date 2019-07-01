@@ -97,7 +97,7 @@ public class AppTest {
 
         Actions builder = new Actions(webDriver);
         builder.moveToElement(Products).build().perform();
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         // Products
         WebElement ProductsTitle = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div[2]/div/div[1]/div/span"));
@@ -118,6 +118,43 @@ public class AppTest {
         assertEquals("https://www.ringcentral.com/office/phone-system-features.html", Features.getAttribute("href"));
         WebElement PhonesAndHeadsets = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div/div/ul/li[3]/a"));
         assertEquals("https://www.ringcentral.com/office/voip-phone.html", PhonesAndHeadsets.getAttribute("href"));
+        WebElement DesktopApp = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div/div/ul/li[4]/a"));
+        assertEquals("https://www.ringcentral.com/desktop-app.html", DesktopApp.getAttribute("href"));
+        WebElement MobileApp = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div/div/ul/li[5]/a"));
+        assertEquals("https://www.ringcentral.com/mobile-app.html", MobileApp.getAttribute("href"));
+        WebElement OfficePricing = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div/div/ul/li[6]/a"));
+        assertEquals("https://www.ringcentral.com/office/plansandpricing.html", OfficePricing.getAttribute("href"));
+
+        //Products - Meetings
+        WebElement Meetings = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/div/div/div[1]/a"));
+        assertEquals("https://www.ringcentral.com/online-meetings/overview.html", Meetings.getAttribute("href"));
+        WebElement MeetingsSubtitle = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/div/div/div[1]/a/span/span[2]"));
+        assertEquals("The complete video meetings solution.", MeetingsSubtitle.getText());
+
+        // Products - CC
+        WebElement CC = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/div/div/div[2]/a"));
+        assertEquals("https://www.ringcentral.com/contact-center/overview.html", CC.getAttribute("href"));
+        WebElement CCSubtitle = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/div/div/div[2]/a/span/span[2]"));
+        assertEquals("Omnichannel collaborative contact center.", CCSubtitle.getText());
+
+        // Products - Fax
+        WebElement Fax = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/div/div/div[3]/a"));
+        assertEquals("https://www.ringcentral.com/fax/features/how-it-works.html", Fax.getAttribute("href"));
+        WebElement FaxSubtitle = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[3]/div/div/div[3]/a/span/span[2]"));
+        assertEquals("Fax from any device connected to the internet.", FaxSubtitle.getText());
+
+        // Products - Glip
+        WebElement Glip = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[4]/div/div/div[1]/a"));
+        assertEquals("https://www.ringcentral.com/teams/overview.html", Glip.getAttribute("href"));
+        WebElement GlipSubtitle = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[4]/div/div/div[1]/a/span/span[2]"));
+        assertEquals("Team messaging & collaboration.", GlipSubtitle.getText());
+
+        //Products - Pro
+        WebElement Pro = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[4]/div/div/div[2]/a"));
+        assertEquals("https://www.ringcentral.com/pro/features/how-it-works.html", Pro.getAttribute("href"));
+        WebElement ProSubtitle = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[4]/div/div/div[2]/a/span/span[2]"));
+        assertEquals("Inbound call management and toll-free numbers.", ProSubtitle.getText());
+
 
         // Pricing
         WebElement Pricing = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[3]/div/a"));

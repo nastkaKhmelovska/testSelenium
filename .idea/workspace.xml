@@ -23,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/anastasiia/learning/selenium/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="118" column="192" selection-start-line="118" selection-start-column="192" selection-end-line="118" selection-end-column="192" />
+            <state relative-caret-position="206">
+              <caret line="125" column="81" lean-forward="true" selection-start-line="125" selection-start-column="81" selection-end-line="125" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,7 +61,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -79,7 +79,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561987202371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561989052378" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -183,21 +183,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 13h 28m 16s.xml">
-      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 06m 35s.xml">
-      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 08m 24s.xml">
-      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 10m 30s.xml">
-      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 13m 26s.xml">
-      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 13m 55s.xml">
       <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
     </history-entry>
@@ -213,9 +198,24 @@
     <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 20m 00s.xml">
       <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 38m 15s.xml">
+      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 47m 38s.xml">
+      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 48m 18s.xml">
+      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 49m 13s.xml">
+      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppTest_topNavLinks - 2019.07.01 at 16h 49m 57s.xml">
+      <configuration name="AppTest.topNavLinks" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
@@ -227,7 +227,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44420367" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18743229" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -270,8 +270,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/anastasiia/learning/selenium/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="118" column="192" selection-start-line="118" selection-start-column="192" selection-end-line="118" selection-end-column="192" />
+        <state relative-caret-position="206">
+          <caret line="125" column="81" lean-forward="true" selection-start-line="125" selection-start-column="81" selection-end-line="125" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
