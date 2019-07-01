@@ -29,6 +29,7 @@ public class AppTest {
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         webDriver = new ChromeDriver(capabilities);
+        webDriver.manage().window().setSize(new Dimension(1200, 3800));
     }
 
     @Test
@@ -84,6 +85,51 @@ public class AppTest {
         assertEquals("Thank you for your interest in RingCentral", thankYouMessage.getText());
 
 
+    }
+
+    @Test
+    public void topNavLinks() throws InterruptedException {
+        webDriver.get("https://www.ringcentral.com/solutions/small-business.html");
+
+
+        WebElement Products = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[1]/a"));
+        assertEquals("https://www.ringcentral.com/all-products.html", Products.getAttribute("href"));
+
+        Actions builder = new Actions(webDriver);
+        builder.moveToElement(Products).build().perform();
+        Thread.sleep(2000);
+
+        // Products
+        WebElement ProductsTitle = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div[2]/div/div[1]/div/span"));
+        assertEquals("Products", ProductsTitle.getText());
+        WebElement ProductsSubtitle = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div[2]/div/div[2]/div"));
+        assertEquals("Get the leading all-in-one solution or just what you need.", ProductsSubtitle.getText());
+        WebElement SeeAllProducts = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div[2]/div/div[3]/div/a"));
+        assertEquals("https://www.ringcentral.com/all-products.html", SeeAllProducts.getAttribute("href"));
+
+        // Products - Office
+        WebElement OfficeLink = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div/div/a"));
+        assertEquals("https://www.ringcentral.com/office/how-it-works.html", OfficeLink.getAttribute("href"));
+        WebElement OfficeSubtitle = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div/div/a/span/span[2]"));
+        assertEquals("All-in-one phone, meetings and messaging.", OfficeSubtitle.getText());
+        WebElement HowItWorks = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div/div/ul/li[1]/a"));
+        assertEquals("https://www.ringcentral.com/office/small-business/voip-phone-system-how-it-works.html", HowItWorks.getAttribute("href"));
+        WebElement Features = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div/div/ul/li[2]/a"));
+        assertEquals("https://www.ringcentral.com/office/phone-system-features.html", Features.getAttribute("href"));
+        WebElement PhonesAndHeadsets = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[2]/div[2]/div/div[1]/div/div[2]/div/div[2]/div/div/div/ul/li[3]/a"));
+        assertEquals("https://www.ringcentral.com/office/voip-phone.html", PhonesAndHeadsets.getAttribute("href"));
+
+        // Pricing
+        WebElement Pricing = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[3]/div/a"));
+        assertEquals("https://www.ringcentral.com/office/plansandpricing.html", Pricing.getAttribute("href"));
+
+        // Resources
+        WebElement Resources = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[4]/div[1]/a"));
+        assertEquals("https://www.ringcentral.com/resources/learning-center.html", Resources.getAttribute("href"));
+
+        // About US
+        WebElement AboutUs = webDriver.findElement(By.xpath("/html/body/div[1]/div[4]/div/div/div[19]/div/div[1]/div[5]/div[1]/a"));
+        assertEquals("https://www.ringcentral.com/whyringcentral/company.html", AboutUs.getAttribute("href"));
     }
 
     @Test
